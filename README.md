@@ -107,40 +107,6 @@ The application will open in your default browser at `http://localhost:3000`.
 
 ---
 
-## Screenshots
-
-### Basic Calculator
-
-![screenshots/basic.png](screenshots/basic.png)
-
-### Scientific Calculator
-
-![screenshots/scientific.png](screenshots/scientific.png)
-
-### Graphing Calculator
-
-![screenshots/graphing.png](screenshots/graphing.png)
-
-### Boolean Logic Calculator
-
-![screenshots/boolean.png](screenshots/boolean.png)
-
----
-
-## Future Improvements
-
-1. **Unit Conversions**:
-    - Add support for converting between units (e.g., length, temperature).
-2. **Statistical Functions**:
-    - Implement statistical calculations (e.g., mean, median, standard deviation).
-3. **History Feature**:
-    - Save and display previous calculations.
-4. **Responsive Design**:
-    - Optimize the UI for mobile devices.
-5. **Custom Themes**:
-    - Allow users to switch between light and dark themes.
-
----
 
 ## Contributing
 
@@ -149,12 +115,6 @@ Contributions are welcome! If you'd like to improve this project, please:
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Submit a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](https://www.notion.so/khayrullaevna/LICENSE) file for details.
 
 ---
 
