@@ -11,7 +11,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import * as math from "mathjs"; // Import math.js for safer evaluations
+import * as math from "mathjs"; 
 
 const ScientificCalculator = () => {
   const [display, setDisplay] = useState("0");
@@ -25,8 +25,8 @@ const ScientificCalculator = () => {
   const [input2, setInput2] = useState("0");
   const [lastNumber, setLastNumber] = useState(false);
   const [openParentheses, setOpenParentheses] = useState(0);
-  const [isDegreeMode, setIsDegreeMode] = useState(true); // Add degree/radian mode state
-
+  const [isDegreeMode, setIsDegreeMode] = useState(true); 
+  
   const handleNumber = (num) => {
     if (display === "0" && num !== ".") {
       setDisplay(num);
@@ -72,7 +72,6 @@ const ScientificCalculator = () => {
         expression += ")";
       }
 
-      // Convert degrees to radians if in degree mode
       if (isDegreeMode) {
         expression = expression.replace(/Math\.(sin|cos|tan)\(/g, (match, func) => {
           return `Math.${func}((Math.PI / 180) * `;
@@ -83,7 +82,7 @@ const ScientificCalculator = () => {
         throw new Error("Invalid characters");
       }
 
-      const result = math.evaluate(expression); // Use math.js for safer evaluation
+      const result = math.evaluate(expression);
 
       if (isNaN(result) || !isFinite(result)) {
         throw new Error("Invalid result");
@@ -124,7 +123,7 @@ const ScientificCalculator = () => {
           throw new Error("Invalid characters in equation");
         }
 
-        const y = math.evaluate(expr); // Use math.js for safer evaluation
+        const y = math.evaluate(expr); 
 
         if (!isNaN(y) && isFinite(y)) {
           data.push({ x: x, y: y });
